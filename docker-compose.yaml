@@ -1,0 +1,9 @@
+version: '3'
+services:
+  server:
+    container_name: ir_server
+    image: ir_server:1.0.0
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 8501:8501
